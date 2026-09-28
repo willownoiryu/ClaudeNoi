@@ -1,11 +1,12 @@
 # 선행연구 목록
 
-> 연구 주제 (2026-09-28 면담 후 수정): 스토리지 용량 한계 알림의 **압박 수준**과 **대안 출구**가 사용자 **행동과 신뢰**에 미치는 영향
+> 연구 주제: 클라우드 스토리지에서 정리하지 않는 사용자를 대상으로, 불쾌감 없이 정리·결제를 이끄는 설계
+> (2026-09-28 면담 피드백: 설득에 대한 부분을 더 찾아보기 → 7절)
 >
 > BibTeX는 [`references/references.bib`](../references/references.bib)에 있어요. `[키]`로 본문에서 인용하면 돼요.
 > ⭐ = 먼저 읽을 핵심 논문
 
-## 0. 연구의 출발점 — 면담에서 정리한 세 논문
+## 0. 면담 때 발표했던 세 논문 (발표안은 채택되지 않았지만, 설득 연구의 출발점으로 유효)
 
 | 원칙 | 논문 | 핵심 내용 | 이 연구에서의 쓰임 |
 | --- | --- | --- | --- |
@@ -13,12 +14,11 @@
 | ② 위협과 함께 행동 가능한 대안을 주면 설득 효과가 높아진다 | ⭐ Tannenbaum 외 (2015). *Appealing to fear: A meta-analysis of fear appeal effectiveness and theories.* Psychological Bulletin, 141(6), 1178–1204. `[tannenbaum2015fear]` | 위협 소구 메타분석. 위협 소구는 태도·의도·행동에 효과적이며, 효능 메시지(할 수 있는 행동)가 함께 있을 때 효과가 큼 | **출구 요인(AI 정리 제안)의 근거** |
 | ③ 불쾌감은 서비스 이용 과정에서 누적된다 | ⭐ 조보민·오선영·이지영·김은지·윤재영 (2023). 구독 해지 과정의 복잡성 정도에 따른 사용자 경험 연구: 다크패턴 디자인 인지 과정을 중심으로. 디자인학연구, 36(2), 247–265. `[jo2023subscription]` | 구독 해지 과정의 복잡성이 불쾌감과 재구독 의사에 미치는 영향 | **신뢰를 측정해야 하는 이유** (불쾌감이 쌓이면 관계가 손상됨) |
 
-→ 세 논문 모두 '설득이 통했는가'까지만 쟀고, **서비스에 대한 신뢰는 측정하지 않았다** → 이 연구의 빈자리.
+→ 발표안은 여기서 '서비스 신뢰'라는 빈자리를 찾았지만 채택되지 않았어요. 세 논문 자체는 설득 문헌으로 계속 참고할 수 있어요.
 
 ---
 
-아래 1~6절은 첫 번째 구상(넛지 유형 비교) 때 찾은 문헌이고, 7~9절은 면담 후 추가한 문헌이에요.
-1~6절 중 배경(저장강박, 클라우드 정리)과 반발 이론은 새 방향에서도 그대로 쓸 수 있어요.
+1~6절은 첫 구상 때 찾은 문헌이고, 7~9절은 면담 후 설득을 중심으로 추가한 문헌이에요.
 
 ## 1. 디지털 저장강박 — "왜 안 지우는가"
 
@@ -78,7 +78,19 @@
 | ⭐ | Mäntymäki, Islam & Benbasat (2020). *What drives subscribing to premium in freemium services?* Information Systems Journal, 30(2), 295–333. `[mantymaki2020premium]` | 정서·기능·사회·인식·경제적 가치가 유료 전환과 유지에 미치는 영향 | 결제 의향 요인 |
 | | Wagner, Benlian & Hess (2014). *Converting freemium customers from free to premium.* Electronic Markets, 24(4), 259–268. `[wagner2014converting]` | '지각된 프리미엄 적합성'이 전환에 중요 | 결제 의향 측정 참고 |
 
-## 7. 설득: 위협 소구와 통제적 언어 — "어떻게 설득하나" (면담 과제)
+## 7. 설득 — "어떻게 설득하나" (면담 과제)
+
+### 7-1. 설득의 기본 이론
+
+| | 논문 | 핵심 내용 | 이 연구에서의 쓰임 |
+| --- | --- | --- | --- |
+| ⭐ | Rogers (1975). *A protection motivation theory of fear appeals and attitude change.* Journal of Psychology, 91(1), 93–114. `[rogers1975protection]` | 보호 동기 이론(PMT). 사람은 위협의 심각성·가능성과, 대처 행동의 효능을 평가해 행동을 정함 | 용량 부족(위협)과 정리·결제(대처 행동)를 설명하는 틀 |
+| ⭐ | Petty & Cacioppo (1986). *The elaboration likelihood model of persuasion.* Advances in Experimental Social Psychology, 19, 123–205. `[petty1986elaboration]` | 정교화 가능성 모델(ELM). 메시지를 깊이 따져보는 경로(중심)와 단서로 판단하는 경로(주변)가 있음 | 구체 정보("오래된 파일 4.2GB") vs 단서(경고 아이콘) 설계 |
+| ⭐ | Oinas-Kukkonen & Harjumaa (2009). *Persuasive Systems Design: Key Issues, Process Model, and System Features.* Communications of the AIS, 24, 28. `[oinaskukkonen2009persuasive]` | 설득 시스템 설계(PSD) 모델. 28개 설계 원칙을 과업 지원·대화 지원·신뢰성·사회적 지원 4범주로 분류 | **디지털 서비스의 설득 전략을 체계적으로 고르는 기준** |
+| | Kaptein, Markopoulos, de Ruyter & Aarts (2015). *Personalizing persuasive technologies: Explicit and implicit personalization using persuasion profiles.* International Journal of Human-Computer Studies, 77, 38–51. `[kaptein2015personalizing]` | 사람마다 잘 통하는 설득 전략이 다름 → 설득 프로파일로 개인화 | 사용자 유형(저장강박 성향)별 설득 전략 차이 |
+| | Rosenberg & Siegel (2018). *A 50-year review of psychological reactance theory: Do not read this article.* Motivation Science, 4(4), 281–300. `[rosenberg2018reactance]` | 반발 이론 50년 연구 종합 | 설득의 부작용(반발) 이론 정리 |
+
+### 7-2. 위협 소구와 통제적 언어
 
 | | 논문 | 핵심 내용 | 이 연구에서의 쓰임 |
 | --- | --- | --- | --- |
