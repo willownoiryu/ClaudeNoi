@@ -54,4 +54,5 @@ latexmk -c       # 임시 파일 정리
 
 - 미팅 기록: [`notes/meetings/_template.md`](notes/meetings/_template.md)
 - 읽기 노트: [`notes/reading/_template.md`](notes/reading/_template.md)
+- 연구 주제 정리: [`notes/topic.md`](notes/topic.md)
 - 일정: [`admin/timeline.md`](admin/timeline.md)
