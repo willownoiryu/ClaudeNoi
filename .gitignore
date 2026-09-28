@@ -34,3 +34,19 @@ references/papers/*
 !references/papers/.gitkeep
 ~$*
 *.tmp
+
+# LaTeX build output
+manuscript/build/
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv

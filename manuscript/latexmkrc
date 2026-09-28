@@ -1,0 +1,5 @@
+# XeLaTeX + Biber로 컴파일, 결과물은 build/ 폴더에
+@default_files = ('main.tex');
+$pdf_mode = 5;          # xelatex
+$out_dir = 'build';
+$bibtex_use = 2;        # biber 사용

@@ -1,0 +1,35 @@
+% =====================================================================
+%  패키지와 서식 설정
+% =====================================================================
+
+% ----- 한글 -----
+\usepackage[hangul]{kotex}      % 한국어 조판: "제 1 장", "그림", "표", "목차" 등
+% 글꼴을 바꾸려면 아래 주석을 풀고 설치된 글꼴 이름을 넣으세요
+% \setmainhangulfont{NanumMyeongjo}
+% \setsanshangulfont{NanumGothic}
+
+% ----- 쪽 여백 (학교 규정에 맞게 수정) -----
+\usepackage[top=30mm,bottom=30mm,left=30mm,right=30mm]{geometry}
+
+% ----- 줄 간격 -----
+\usepackage{setspace}
+\setstretch{1.6}
+
+% ----- 수식 -----
+\usepackage{amsmath,amssymb,amsthm}
+
+% ----- 그림·표 -----
+\usepackage{graphicx}
+\graphicspath{{../figures/}}    % figures/ 폴더의 그림을 파일 이름만으로 불러옴
+\usepackage{booktabs}           % 깔끔한 표 선 (\toprule, \midrule, \bottomrule)
+\usepackage{caption}
+\captionsetup{labelsep=period}
+\usepackage{float}
+
+% ----- 참고문헌 (스타일은 학교·학과 규정에 맞게 변경) -----
+\usepackage{csquotes}
+\usepackage[backend=biber,style=authoryear,sorting=nyt]{biblatex}
+\addbibresource{../references/references.bib}
+
+% ----- 링크·상호 참조 (가장 마지막에 불러옴) -----
+\usepackage[hidelinks]{hyperref}
