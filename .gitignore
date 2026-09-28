@@ -28,3 +28,9 @@ venv/
 dist/
 build/
 coverage/
+
+# Thesis
+references/papers/*
+!references/papers/.gitkeep
+~$*
+*.tmp
